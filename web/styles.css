@@ -1,0 +1,571 @@
+
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('123.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #000000;
+}
+
+.about, .services, .contact {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label, form input, form textarea, form button {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+}
+
+
+.hero {
+    background-image: url('123.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #000000;
+    background-attachment: fixed;
+    
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #160095; 
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #9e5031; /* hover */
+}
+
+/* Additional styles for improved readability */
+.about, .services, .contact {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*  form */
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/
+.cta-button {
+    
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64100;
+    transform: scale(1.05); 
+}
+
+
+.hero {
+    
+    animation: floatUp 5s infinite alternate;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.about, .services, .contact {
+    
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.cta-button {
+    background-color: #160092; 
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #9e5031; 
+    transform: scale(1.05); 
+}
+
+
+.hero {
+    animation: floatUp 5s infinite alternate;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Fade-in animation for sections */
+.about, .services, .contact {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide the menu toggle button on larger screens (PCs) */
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    
+    nav ul {
+        display: flex;
+    }
+}
+
+.about p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+
+.about {
+    padding: 40px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+
+.about {
+    background-color: #c4c4c4; 
+}
+
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #333; 
+    margin: 10px 0;
+    align-content: center;
+}
+
+
+
+.about {
+    position: relative;
+}
+
+.about::before {
+    content: "";
+    background: url('11.jpg') repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; 
+    z-index: -1;
+}
+
+.about {
+    background: linear-gradient(to bottom, #f8f8f8, #e2e2e2); /* Gradient background */
+}
+
+.about {
+    text-align: center; 
+}
+
+
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e64100; 
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 18px; 
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+
+header h1 {
+    font-family: 'Montessart', sans-serif;
+    font-size: 36px;
+    color: #fff; 
+}
+
+header h1 span {
+    color: #e64100; 
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    background: linear-gradient(to right, #000436, #326fff); 
+    
+    text-align: center;
+}
+
+
+header {
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    text-align: center; 
+}
+
+.slide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.carousel img {
+    max-width: 35%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+
+.prev-button, .next-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    margin-right: 10px;
+}
+
+
+.hero {
+    background-image: url('123.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 200px 0;
+    color: #000000;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    background-color: #72dcff;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #3813a75c;
+}
+
+
+.hero {
+    animation: floatUp 5s infinite alternate;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.services {
+    background-color: #f8f8f8; 
+    padding: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: calc(33.33% - 20px); 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.service:hover {
+    transform: scale(1.02); 
+}
+
+.service h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.service p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.car-image {
+    max-width: 150px; 
+    height: auto;
+    display: block;
+   border-radius: 50%;
+    
+}
+.car-collection {
+    background-color: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.car {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.car:hover {
+    transform: scale(1.02);
+}
+
+.car h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #e64100; 
+    font-weight: bold;
+}
+
+.car-image {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.car-collection h2 {
+    font-size: 28px;
+    color: #333; 
+    margin-bottom: 20px;
+}
+
